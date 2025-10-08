@@ -60,9 +60,9 @@ class MainActivity : ComponentActivity(), CoroutineScope {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     Column(modifier = Modifier.fillMaxWidth()) {
-                        Greeting(name = "Vpn服务")
+                        Greeting(name = "Vpn11服务")
                         Text(text = "AckId:$currentHandleAckId")
-                        Text(text = "设备->网络 字节:${ToNetworkQueueWorker.totalInputCount}")
+                        Text(text = "设备->网络xx 字节:${ToNetworkQueueWorker.totalInputCount}")
                         Text(text = "网络->设备 字节:${ToDeviceQueueWorker.totalOutputCount}")
                         Button(onClick = {
                             if (isMyVpnServiceRunning) {
@@ -75,9 +75,9 @@ class MainActivity : ComponentActivity(), CoroutineScope {
 
                         }) {
                             val text = if (isMyVpnServiceRunning) {
-                                "停止VPN"
+                                "停止VPN1"
                             } else {
-                                "启动VPN"
+                                "启动VPN1"
                             }
                             Text(text = text)
                         }
